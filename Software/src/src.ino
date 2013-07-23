@@ -13,5 +13,4 @@ void loop(){
   lcdPrint();
   engineRunningTime();
   memoryFree();
-  lights(currentMillis);
 }
