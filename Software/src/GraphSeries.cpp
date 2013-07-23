@@ -44,4 +44,3 @@ void GraphSeries::SendData(HardwareSerial *pPort, prog_char *pchSeriesName, floa
   pPort->println("}");
 }
 
-

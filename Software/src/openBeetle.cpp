@@ -75,7 +75,7 @@ const String german[lsl] =  {
   "BOOT",
   "motor stunden: ",
   "kostenlos RAM: ",
-  "HauptmenÃ¼   ",
+  "Hauptmenü   ",
   "Informationen      ",
   "Modes              ",
   "Einstellungen      ",
@@ -86,19 +86,19 @@ const String german[lsl] =  {
   "Informationen",
   "I/O Staaten ",
   "Beschleunigen      ",
-  "HÃ¶he               ",
+  "Höhe               ",
   "Genauigkeit        ",
   "Satellites #       ",
   "Koordinaten        ",
   "Stunden            ",
   "Spannung           ",
   "Notfall            ",
-  "ZufÃ¤llige          ",
-  "Auto Licht VerzÃ¶ge ",
+  "Zufällige          ",
+  "Auto Licht Verzöge ",
   "Auto-Licht-Dimmer  ",
   "Low Voltage Cut Off",
   "Geschwindigkeit Ei ",
-  "HÃ¶heneinheiten     ",
+  "Höheneinheiten     ",
   "Sprache            ",
   "Englisch           ",
   "Deutsch            ",
@@ -107,7 +107,7 @@ const String german[lsl] =  {
   "Modes       ",
   "Einstellunge",
   "Sprache     ",
-  "Sprache standardmÃ¤ÃŸig: ",
+  "Sprache standardmäßig: ",
   "System      ",
   "Debug       ",
 };
@@ -1163,14 +1163,35 @@ if (xSelect == 99 && ySelect == 2){
       lcd.setCursor(1, 3);
       lcd.print("test");
   }
+  
+  
+  
     if (Select == 0){
     }
   }
-  if (xSelect == 99 && ySelect > 1){
-    ySelect = 1;
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  if (xSelect == 99 && ySelect > 4){
+    ySelect = 4;
   }
+
+
+
   Select = 1;
 }
+
 void lights(long currentMillis){
 //If position one on turn lights on
   if (posoneinState == LOW) {
@@ -1269,7 +1290,6 @@ void lights(long currentMillis){
     frsbrightness = setflsbrightness;
   }
 }
-
 
 
 
